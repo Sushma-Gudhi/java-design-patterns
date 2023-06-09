@@ -52,7 +52,7 @@ class ConverterTest {
    */
   @Test
   void testConversionsStartingFromDto() {
-    var u1 = new UserDto("Tom", "Hanks", true, "tom@hanks.com");
+    var u1 = new UserDto("Tom", "Hanks", true, "tom@hanks.com1");
     var u2 = userConverter.convertFromEntity(userConverter.convertFromDto(u1));
     assertEquals(u1, u2);
   }
